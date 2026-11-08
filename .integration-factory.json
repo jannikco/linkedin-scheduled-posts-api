@@ -5,7 +5,7 @@
   "releaseEligible": true,
   "maintainer": "jannikco",
   "license": "MIT",
-  "sourceRevision": "ea33908e4d5e10508739f28e11abf708e11f3117f1108b904229eeeb00079e55",
+  "sourceRevision": "34dbd021a9516730577489a5dfb489b42063d80aeefcf0076f0c981a556abd50",
   "evidence": [
     "Pinned public OpenAPI contract",
     "tests/leadadapter.test.mjs"
@@ -22,6 +22,40 @@
     "list_scheduled_posts_get"
   ],
   "attributionSlug": "github-linkedin-scheduled-posts-api",
+  "artifactType": "workflow",
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "list_scheduled_posts_get",
+          "level": "Tested",
+          "evidenceRefs": [
+            "SDK/agent/workflow contract fixtures; no live provider execution"
+          ],
+          "method": "contract-fixture"
+        }
+      ],
+      "evidenceRefs": [
+        "SDK/agent/workflow contract fixtures; no live provider execution"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  },
+  "qualityVersion": 2,
+  "utility": {
+    "problem": "Inspect stored scheduled posts without publishing or editing them.",
+    "output": "Authenticated LeadAdapter results, review reports and resumable research-to-CRM workflows"
+  },
+  "agentReady": true,
+  "version": "0.2.0",
+  "executionAuthority": "leadadapter-api",
   "factory": "leadadapter-pipmcp",
   "generatorVersion": 1
 }
