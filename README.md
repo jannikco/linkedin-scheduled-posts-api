@@ -1,3 +1,70 @@
+# Review the posting schedule before changing anything
+
+**LinkedIn + your AI assistant · powered by LeadAdapter**
+
+You have scheduled content in LeadAdapter and want a clear view of the stored schedule before the team changes its publishing plans.
+
+**Made for:** Content managers
+
+Real tasks need a LeadAdapter account. Connect LinkedIn too when your task needs fresh LinkedIn activity.
+
+## Ask your AI to set this up
+
+Paste this into a coding assistant that can open project files and run commands, such as Codex, Claude Code or Grok Build. You do not need to understand the code first.
+
+```text
+Help me use this project: https://github.com/jannikco/linkedin-scheduled-posts-api
+
+I'm not a programmer. My goal is: Review the posting schedule before changing anything.
+
+Read the project instructions and set it up in a new folder without overwriting my work.
+Guide me through LeadAdapter and its private key setup; never ask me to paste secrets into
+this chat. Run a documented sample-data demo if available, then help me get a first small
+result from my connected app. Explain the result in plain English. Ask before changing
+records, sending messages or publishing anything.
+```
+
+## Three useful things to ask for
+
+```text
+Show the scheduled content records I am authorized to inspect.
+```
+
+```text
+Turn the stored schedule into a clear review list, showing current states and missing
+information. Do not publish, reschedule or imply a queued post is already live.
+```
+
+```text
+Turn the scheduled records into a readable publishing review for the content team, with
+each item's stored state.
+```
+
+## Your path to a real result
+
+```mermaid
+flowchart LR
+  A["Ask your AI"] --> B["Connect LeadAdapter"] --> C["Review the posting<br/>schedule before…"] --> D["Review together"]
+```
+
+1. [Open LeadAdapter setup](https://leadadapter.com/github/start?integration=linkedin-api&utm_source=github&utm_campaign=github-linkedin-scheduled-posts-api&utm_content=people-first-readme) and sign in or create your account.
+2. Connect a LinkedIn profile if your chosen task needs fresh LinkedIn activity.
+3. Create the product API key through the official setup, add it privately to your AI project's environment, and ask your AI to try a small read.
+
+**What to expect:** You need one LeadAdapter API key and the workspace access required by the task. LinkedIn operations also depend on the connected profile, consent and available tools. Work that is queued stays pending until a real result is returned.
+
+Add your LeadAdapter key privately in your project settings. Keep keys out of chat and public repositories.
+
+## Keep going
+
+- [Explore the LinkedIn API](https://github.com/jannikco/linkedin-api)
+- [Use LinkedIn through an AI assistant](https://github.com/jannikco/linkedin-mcp)
+- [Build with the JavaScript / TypeScript client](https://github.com/jannikco/linkedin-typescript-sdk)
+
+<details>
+<summary>Technical reference: installation commands, exact capabilities and troubleshooting</summary>
+
+<!-- people-first:technical:start -->
 # LinkedIn Post Scheduling API — LeadAdapter
 
 **Bring your publishing queue into the same workflow as your leads and campaigns.**
@@ -150,3 +217,7 @@ This repository publishes a runnable API recipe under MIT. LeadAdapter’s hoste
 This code is checked with contract fixtures; the MCP artifact also tests stdio tools/call. These checks establish client behavior, not live LinkedIn provider execution or conversion outcomes. See `integration.json` and `SHA256SUMS` for the recorded artifact evidence. The source contract is [LeadAdapter’s public OpenAPI](https://leadadapter.com/api/v1/openapi.json).
 
 For a reproducible client bug, open a repository issue with the operation ID and a sanitized request identifier. For account access, plans or execution availability, use LeadAdapter’s in-app support. Never include API keys, personal lead data or session material.
+
+<!-- people-first:technical:end -->
+
+</details>
